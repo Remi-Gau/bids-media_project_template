@@ -23,6 +23,8 @@ Edit right access to:
 
 ## Step by step
 
+### Get this template
+
 1. start a new project:
 
 - if you don't need version control: by downloading this template (click on
@@ -32,25 +34,42 @@ Edit right access to:
   creating a new repository by clicking on `Use the template` and the clone the
   new repository
 
-1. rename `template.kdenlive` if this is for a youtube / posdcast episode:
-   `episode-[episode number]_title_here.kdenlive`
+### Add your own material
 
-   <!-- TODO Add video place holder for new video -->
+1. The file `template.kdenlive` contains a basic [kdenlive](https://kdenlive.org/en/)
+   project to help you get started. Open it in kdenlive:
 
-1. create / update the intro slide from
+![Screenshot of opening the template in kdenlive](material/docs/kdenlive-template.png)
+
+1. This should preload a generic intro sequence and a few placeholder files.
+   The introduction with a logo and a jingle should not need changes.
+
+![Screenshot of a preloaded project in kdenlive](material/docs/kdenlive-project.png)
+
+1. The placeholder files are an intro-slide (`material/intro_slides.svg`) and a recording
+   (`recording.mp4`). Replace these files with your own versions.
+
+   - create / update the intro slide with a tool of your choice, or online from
    [these slides](https://docs.google.com/presentation/d/19-LQjDTDPXg0N8Z0LVH6ZyG0GaaiuactHIpuXTmPiQ8/edit?usp=sharing)
 
    - Note that slides can be saved individually
-     `File --> Download --> PNG image (.png, current slide)`
+     `File --> Download --> SVG image (.svg, current slide)`
 
-1. in kdenlive:
+   - save your recording in the `material/` directory. Do not version control it, is is
+     probably very big :)
 
-   1. add intro slide for same duration as intro jingle
+1. If this project is for a youtube / podcast episode, you can rename the template:
+   `episode-[episode number]_title_here.kdenlive`
 
-   <!-- TODO: set template so that duration of both match -->
+### Adjust the template to your material
 
-   1. crop beginning and end of the video
+1. When you replaced the place holder files with identical names, the project files
+   in kdenlive should have updated themselves automatically. If you have used other
+   file names, you can add them as clips.
 
+   1. Make sure that your new intro slide replaces the placeholder intro slide
+   1. Make sure that your recording replaces the placeholder recording
+   1. Crop the recording, if necessary
    1. eventually do any other editing (for example: remove long pauses...)
 
 1. render the video: `episode-[episode number]\_title_here.mp4`
